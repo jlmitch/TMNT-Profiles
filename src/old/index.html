@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TMNT</title>
+
+    <!-- jQuery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <!-- JAVASCRIPT -->
+    <script src="scripts/index.js"></script>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="styles/index.css" media="screen" />
+  </head>
+  <body>
+
+    <!-- NAVBAR START -->
+    <div class="nav-wrapper">
+      <div class="dropdown-show">
+        <button class="dropbtn-show">SHOW ALL</button>
+      </div>
+      <div class="dropdown-name">
+        <button class="dropbtn-name">NAME</button>
+        <div class="name">
+         <a class="filter-leo" href="#">LEONARDO</a>
+         <a class="filter-don" href="#">DONATELLO</a>
+         <a class="filter-raph" href="#">RAPHAEL</a>
+         <a class="filter-mich" href="#">MICHELANGELO</a>
+        </div>
+      </div>
+      <div class="dropdown-colors">
+        <button class="dropbtn-colors">COLOR</button>
+        <div class="colors">
+         <a class="filter-leo" href="#">BLUE</a>
+         <a class="filter-don" href="#">PURPLE</a>
+         <a class="filter-raph" href="#">RED</a>
+         <a class="filter-mich" href="#">ORANGE</a>
+        </div>
+      </div>
+      <div class="dropdown-weapon">
+        <button class="dropbtn-weapon">WEAPON</button>
+        <div class="weapon">
+         <a class="filter-leo" href="#">KATANAS</a>
+         <a class="filter-don" href="#">BO</a>
+         <a class="filter-raph" href="#">SAI</a>
+         <a class="filter-mich" href="#">NUNCHAKU</a>
+        </div>
+      </div>
+    </div>
+    <!-- NAVBAR END -->
+
+    <div class="intro">
+      <h1 class="page-title">Teenage Mutant Ninja Turtles</h1>
+      <img class="pizza" src="img/pizza-pepperoni.svg" alt="" />
+    </div>
+
+    <!-- TMNT -->
+    <div class="turtle-container">
+      <div class="turtles leo">
+        <img class="turtles-img" src="img/leonardo.jpg" alt="Leonardo" />
+      </div>
+      <div class="turtles don">
+        <img class="turtles-img" src="img/donatello.jpg" alt="Donatello" />
+      </div>
+      <div class="turtles raph">
+        <img class="turtles-img" src="img/raphael.jpg" alt="Raphael" />
+      </div>
+      <div class="turtles mich">
+        <img class="turtles-img" src="img/michelangelo.jpg" alt="Michelangelo" />
+      </div>
+    </div>
+    <!-- TMNT END -->
+
+    <!-- TURTLE MODAL -->
+    <div class="modal fade" id="turtleModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel"></h4>
+          </div>
+          <div class="modal-body"></div>
+        </div>
+      </div>
+    </div>
+    <!-- TURTLE MODAL END-->
+
+
+  </body>
+</html>

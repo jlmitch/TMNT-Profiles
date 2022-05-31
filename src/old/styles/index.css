@@ -1,0 +1,372 @@
+@font-face {
+  font-family: 'chlorinarregular';
+  src: url('./chlorinr-webfont.eot'); /* IE9 Compat Modes */
+  src: url('./chlorinr-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./chlorinr-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./chlorinr-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./chlorinr-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./chlorinr-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: lighter;
+  font-style: normal;
+}
+
+/*NAV*/
+.nav-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #8CC53F;
+  border: 3px solid #006806;
+}
+
+.dropdown-show, .dropdown-name, .dropdown-colors, .dropdown-weapon {
+  border-left: 1px solid #006806;
+}
+
+/* Style The Dropdown Button */
+.dropbtn-show {
+  background-color: #8CC53F;
+  font-family: monospace;
+  color: #000000;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+}
+
+.dropdown-show {
+  position: relative;
+  display: inline-block;
+}
+
+/* Change the background color of the dropdown button when hovering */
+.dropdown-name:hover .dropbtn-show {
+  background-color: #3e8e41;
+}
+
+/* Style The Dropdown Button */
+.dropbtn-name {
+    background-color: #8CC53F;
+    font-family: monospace;
+    color: #000000;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown-name {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.name {
+    display: none;
+    position: absolute;
+    background: url(../img/pepperoni-background.png);
+    min-width: 160px;
+    z-index: 5;
+}
+
+/* Links inside the dropdown */
+.name a {
+    color: black;
+    font-family: monospace;
+    font-size: 22px;
+    font-weight: bolder;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-name a:hover {
+  background-color: #8CC53F;
+  border: 3px solid #006806;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown-name:hover .name {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown-name:hover .dropbtn-name {
+    background-color: #3e8e41;
+}
+
+/* COLOR */
+
+/* Style The Dropdown Button */
+.dropbtn-colors {
+    background-color: #8CC53F;
+    font-family: monospace;
+    color: #000000;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown-colors {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.colors {
+    display: none;
+    position: absolute;
+    background: url(../img/pepperoni-background.png);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-align: center;
+    left: -35px;
+    z-index: 5;
+}
+
+/* Links inside the dropdown */
+.colors a {
+    color: black;
+    font-family: monospace;
+    font-size: 22px;
+    font-weight: bolder;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-colors a:hover {
+  background-color: #8CC53F;
+  border: 3px solid #006806;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown-colors:hover .colors {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown-colors:hover .dropbtn-colors {
+    background-color: #3e8e41;
+}
+
+/* WEAPON */
+
+/* Style The Dropdown Button */
+.dropbtn-weapon {
+    background-color: #8CC53F;
+    font-family: monospace;
+    color: #000000;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown-weapon {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.weapon {
+    display: none;
+    position: absolute;
+    background: url(../img/pepperoni-background.png);
+    min-width: 160px;
+    right: 0;
+    text-align: right;
+    z-index: 5;
+}
+
+/* Links inside the dropdown */
+.weapon a {
+    color: black;
+    font-family: monospace;
+    font-size: 22px;
+    font-weight: bolder;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-weapon a:hover {
+  background-color: #8CC53F;
+  border: 3px solid #006806;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown-weapon:hover .weapon {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown-weapon:hover .dropbtn-weapon {
+    background-color: #3e8e41;
+}
+/*NAV END*/
+
+/*INTRO*/
+.intro {
+  text-align: center;
+}
+
+.pizza {
+  max-width: 360px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 35px;
+  z-index: -1;
+}
+
+.page-title {
+  font-family: 'chlorinarregular', Arial, sans-serif;
+  font-size: 70px;
+  color: #000000;
+  border: 3px solid #006806;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #8CC53F;
+  position: relative;
+  top: 185px;
+}
+/*INTRO END*/
+
+body {
+  background-color:#000000;
+  cursor: pointer;
+}
+
+.turtle-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.turtles {
+    flex-basis: 25%;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.turtles-img {
+  max-width: 300px;
+}
+
+/*TURTLE MODAL*/
+.modal-content {
+  border: 5px solid #006806;
+}
+
+.modal-header {
+  background-color: #8CC53F;
+  border: 1px solid #006806;
+  text-align: center;
+}
+
+.modal-header h4 {
+  font-family: 'chlorinarregular', Arial, sans-serif;
+  font-size: 55px;
+  color: #000000;
+}
+
+.modal-body {
+  background-color: #000000;
+  text-align: center;
+  height: auto;
+  overflow: auto;
+}
+
+/*Holds the turtle image*/
+.modal-body__left {
+  width: 30%;
+  float: left;
+}
+
+/*holds labels and values of individual turtle*/
+.modal-body__right {
+  width: 70%;
+  float: left;
+  margin-top: 40px;
+}
+
+.turtle-label {
+  font-family: monospace;
+  color: #aaa;
+  font-size: 15px;
+  font-weight: bolder;
+  float: left;
+  text-align: right;
+  padding-right: 10px;
+  width: 35%;
+}
+
+.turtle-value {
+  font-family: monospace;
+  color: #ffffff;
+  font-size: 15px;
+  float: left;
+  width: 65%;
+  text-align: left;
+}
+
+.turtle-img {
+  width: 100%;
+}
+/*TURTLE MODAL END*/
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 1000px) {
+  .page-title {
+    font-size: 50px;
+    max-width: 750px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav-wrapper {
+    justify-content: space-around;
+  }
+
+  .dropdown-show, .dropdown-name, .dropdown-colors, .dropdown-weapon {
+    border-left: none;
+  }
+
+  .page-title {
+    font-size: 45px;
+    max-width: 650px;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .page-title {
+    font-size: 40px;
+  }
+
+  .dropbtn-show, .dropbtn-name, .dropbtn-colors, .dropbtn-weapon {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .modal-body__left, .modal-body__right {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .modal-body__left {
+    width: 45%;
+  }
+
+  .modal-body__right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .page-title {
+    font-size: 35px;
+  }
+}
